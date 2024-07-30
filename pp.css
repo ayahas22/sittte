@@ -1,0 +1,206 @@
+* 
+{ 
+    margin : 0; 
+    padding: 0; 
+    box-sizing : border-box; 
+}
+
+
+.container 
+{ 
+   
+    width: 100%;
+    height : 700vh;
+    background: linear-gradient(45deg,#8499ed , #74d6f9 ,
+    #58345a , #501c55);
+     background-size: 300% 300%;
+     animation : color 12s ease-in-out infinite;
+}
+
+
+
+@keyframes color
+{ 
+    0% 
+    { 
+        background-position : 0 50%;
+    }
+    50% 
+    { 
+        background-position : 100% 50%;
+    }
+    100% 
+    { 
+        background-position : 0 50%;
+    }
+    
+}
+
+.main{ 
+    align-items: center ;
+    justify-content: center;
+    display: flex ;
+    flex-direction: row;
+    text-shadow: 2px 2px 4px rgba(39, 33, 38, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fde8f9;
+    margin-bottom: 20px;
+    font-family: 'Cute', sans-serif;
+    font-size: 2.5em;
+
+} 
+
+.main img { 
+    width: 100px;
+    height :100px;
+}
+
+.box1, .box2 { 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    flex-direction: column;
+}
+
+.HUA, .fub , .Basi, .Qizai { 
+    
+    background: rgba(255, 255, 255 , 0.1);
+    overflow:hidden;
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255 , 0.5);
+    border-left: 1px solid rgba(255, 255, 255 , 0.5);
+    backdrop-filter: blur(5px);
+    transition: 1s ;
+
+
+}
+.info {
+    display: flex;
+    margin-top: 80px;
+    text-align: center;
+    width: 60%;
+    font-size: 1.3 em;
+    width: 50%;
+    line-height: 1.6;
+    font-family: 'Gluten', sans-serif;
+    font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255 , 0.5);
+    border-left: 1px solid rgba(255, 255, 255 , 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255 , 0.1);
+    overflow:hidden;
+    color: #fde8f9;
+                                                
+}
+.HUA:hover , .fub:hover , .Basi:hover , .Qizai:hover { 
+    transform : scale(1.3);
+    z-index: 2;
+
+} 
+
+.HUA img, .fub img , .Basi img, .Qizai img  {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    height: 300px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+ } 
+
+ .kor , .oni , .bas, .qiz { 
+    position: absolute;
+    margin: 0;
+    font-size: 1.8em;
+    color: #f9e7f3;
+    bottom: 10px;
+    left: 50%;
+   
+    background: rgba(65, 64, 64, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Cute', sans-serif;
+   
+ }
+
+ 
+.imgs {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; 
+    box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255 , 0.5);
+    border-left: 1px solid rgba(255, 255, 255 , 0.5);
+    backdrop-filter: blur(5px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    
+  }
+  
+  .imgs :hover { 
+    transform: scale(1.1) translateY(-50%);
+    z-index: 2;
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.7);
+  }
+
+  .imgs img {
+    width: 300px; 
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  .imgs img:hover {
+    transform: scale(1.05); 
+  }
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  /* .container2 {
+    position: relative;
+    width: 100%;
+  } */
+
+  .intro { 
+    position: absolute;
+    margin: 0;
+    font-size: 1.3em;
+    color: #f9e7f3;
+    padding: 10px;
+    line-height: 1.6;
+    font-family: 'Gluten', sans-serif;
+  }
+
+  
